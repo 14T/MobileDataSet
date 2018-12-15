@@ -109,12 +109,11 @@
 		A4FF43F321C4D4C400936983 /* DataSetApp */ = {
 			isa = PBXGroup;
 			children = (
-				A4FF43F421C4D4C400936983 /* AppDelegate.swift */,
-				A4FF43F621C4D4C400936983 /* ViewController.swift */,
-				A4FF43F821C4D4C400936983 /* Main.storyboard */,
-				A4FF43FB21C4D4C500936983 /* Assets.xcassets */,
-				A4FF43FD21C4D4C500936983 /* LaunchScreen.storyboard */,
-				A4FF440021C4D4C500936983 /* Info.plist */,
+				A4FF441521C4D70E00936983 /* Controllers */,
+				A4FF441821C4D74F00936983 /* Views */,
+				A4FF441721C4D74600936983 /* ViewModels */,
+				A4FF441621C4D72A00936983 /* Resources */,
+				A4FF441421C4D6FA00936983 /* AppDelegate */,
 			);
 			path = DataSetApp;
 			sourceTree = "<group>";
@@ -126,6 +125,47 @@
 				A4FF440B21C4D4C500936983 /* Info.plist */,
 			);
 			path = DataSetAppTests;
+			sourceTree = "<group>";
+		};
+		A4FF441421C4D6FA00936983 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A4FF43F421C4D4C400936983 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A4FF441521C4D70E00936983 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4FF43F621C4D4C400936983 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A4FF441621C4D72A00936983 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A4FF440021C4D4C500936983 /* Info.plist */,
+				A4FF43FB21C4D4C500936983 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A4FF441721C4D74600936983 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A4FF441821C4D74F00936983 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A4FF43FD21C4D4C500936983 /* LaunchScreen.storyboard */,
+				A4FF43F821C4D4C400936983 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,8 +499,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4GDUVD762;
-				INFOPLIST_FILE = DataSetApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = DataSetApp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sphtech.DataSetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -475,8 +518,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4GDUVD762;
-				INFOPLIST_FILE = DataSetApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = DataSetApp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sphtech.DataSetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -493,7 +539,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4GDUVD762;
 				INFOPLIST_FILE = DataSetAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sphtech.DataSetAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -511,7 +561,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4GDUVD762;
 				INFOPLIST_FILE = DataSetAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sphtech.DataSetAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
