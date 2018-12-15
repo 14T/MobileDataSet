@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06D0A1B7691156C9FB52999C /* Pods_DataSetAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EA5EA5875246E32C9ABF3B /* Pods_DataSetAppTests.framework */; };
 		A4FF43F521C4D4C400936983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF43F421C4D4C400936983 /* AppDelegate.swift */; };
 		A4FF43F721C4D4C400936983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF43F621C4D4C400936983 /* ViewController.swift */; };
 		A4FF43FA21C4D4C400936983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FF43F821C4D4C400936983 /* Main.storyboard */; };
 		A4FF43FC21C4D4C500936983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FF43FB21C4D4C500936983 /* Assets.xcassets */; };
 		A4FF43FF21C4D4C500936983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FF43FD21C4D4C500936983 /* LaunchScreen.storyboard */; };
 		A4FF440A21C4D4C500936983 /* DataSetAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF440921C4D4C500936983 /* DataSetAppTests.swift */; };
+		FE2E193D082DF6B144A8C361 /* Pods_DataSetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9CB841C49CB148C5275186E /* Pods_DataSetApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49EA5EA5875246E32C9ABF3B /* Pods_DataSetAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataSetAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57FE74A6623E8A3AE8244740 /* Pods-DataSetAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataSetAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataSetAppTests/Pods-DataSetAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		6ADF1DC229DE8726B8974847 /* Pods-DataSetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataSetApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataSetApp/Pods-DataSetApp.debug.xcconfig"; sourceTree = "<group>"; };
+		952EB10F23570C8551B65189 /* Pods-DataSetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataSetApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataSetApp/Pods-DataSetApp.release.xcconfig"; sourceTree = "<group>"; };
+		A0A3151A6544AAFBF7462DE7 /* Pods-DataSetAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataSetAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataSetAppTests/Pods-DataSetAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4FF43F121C4D4C400936983 /* DataSetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataSetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FF43F421C4D4C400936983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4FF43F621C4D4C400936983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,7 @@
 		A4FF440521C4D4C500936983 /* DataSetAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataSetAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FF440921C4D4C500936983 /* DataSetAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSetAppTests.swift; sourceTree = "<group>"; };
 		A4FF440B21C4D4C500936983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9CB841C49CB148C5275186E /* Pods_DataSetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataSetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE2E193D082DF6B144A8C361 /* Pods_DataSetApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D0A1B7691156C9FB52999C /* Pods_DataSetAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02C71C5CC6FDD60B02B3716F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6ADF1DC229DE8726B8974847 /* Pods-DataSetApp.debug.xcconfig */,
+				952EB10F23570C8551B65189 /* Pods-DataSetApp.release.xcconfig */,
+				A0A3151A6544AAFBF7462DE7 /* Pods-DataSetAppTests.debug.xcconfig */,
+				57FE74A6623E8A3AE8244740 /* Pods-DataSetAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		04BFD5BE2CF1BC5CAD4AF125 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9CB841C49CB148C5275186E /* Pods_DataSetApp.framework */,
+				49EA5EA5875246E32C9ABF3B /* Pods_DataSetAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A4FF43E821C4D4C400936983 = {
 			isa = PBXGroup;
 			children = (
 				A4FF43F321C4D4C400936983 /* DataSetApp */,
 				A4FF440821C4D4C500936983 /* DataSetAppTests */,
 				A4FF43F221C4D4C400936983 /* Products */,
+				02C71C5CC6FDD60B02B3716F /* Pods */,
+				04BFD5BE2CF1BC5CAD4AF125 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4FF440E21C4D4C500936983 /* Build configuration list for PBXNativeTarget "DataSetApp" */;
 			buildPhases = (
+				F98EBF15282DD6FA16284B4A /* [CP] Check Pods Manifest.lock */,
 				A4FF43ED21C4D4C400936983 /* Sources */,
 				A4FF43EE21C4D4C400936983 /* Frameworks */,
 				A4FF43EF21C4D4C400936983 /* Resources */,
+				A46BDAE211726FA8C69D05A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4FF441121C4D4C500936983 /* Build configuration list for PBXNativeTarget "DataSetAppTests" */;
 			buildPhases = (
+				37C297168C48684990BD78ED /* [CP] Check Pods Manifest.lock */,
 				A4FF440121C4D4C500936983 /* Sources */,
 				A4FF440221C4D4C500936983 /* Frameworks */,
 				A4FF440321C4D4C500936983 /* Resources */,
@@ -191,6 +226,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37C297168C48684990BD78ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataSetAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A46BDAE211726FA8C69D05A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DataSetApp/Pods-DataSetApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataSetApp/Pods-DataSetApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F98EBF15282DD6FA16284B4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataSetApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A4FF43ED21C4D4C400936983 /* Sources */ = {
@@ -358,15 +454,13 @@
 		};
 		A4FF440F21C4D4C500936983 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ADF1DC229DE8726B8974847 /* Pods-DataSetApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4GDUVD762;
 				INFOPLIST_FILE = DataSetApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sphtech.DataSetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -376,15 +470,13 @@
 		};
 		A4FF441021C4D4C500936983 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 952EB10F23570C8551B65189 /* Pods-DataSetApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4GDUVD762;
 				INFOPLIST_FILE = DataSetApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sphtech.DataSetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -394,17 +486,14 @@
 		};
 		A4FF441221C4D4C500936983 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0A3151A6544AAFBF7462DE7 /* Pods-DataSetAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4GDUVD762;
 				INFOPLIST_FILE = DataSetAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sphtech.DataSetAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -415,17 +504,14 @@
 		};
 		A4FF441321C4D4C500936983 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57FE74A6623E8A3AE8244740 /* Pods-DataSetAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4GDUVD762;
 				INFOPLIST_FILE = DataSetAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sphtech.DataSetAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
