@@ -119,6 +119,23 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		A4C15EAF21C64994003D539B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A4FF43FD21C4D4C500936983 /* LaunchScreen.storyboard */,
+				A4FF43F821C4D4C400936983 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A4C15EB021C649C3003D539B /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				A4FF441C21C5FF0B00936983 /* Observable.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
 		A4FF43E821C4D4C400936983 = {
 			isa = PBXGroup;
 			children = (
@@ -145,7 +162,6 @@
 				A4FF441421C4D6FA00936983 /* AppDelegate */,
 				A4FF441521C4D70E00936983 /* Controllers */,
 				A4FF442121C6033300936983 /* Models */,
-				A4FF442A21C6098800936983 /* Protocols */,
 				A4FF441621C4D72A00936983 /* Resources */,
 				A4FF441E21C5FFE000936983 /* Services */,
 				A4FF441B21C5FED100936983 /* Utils */,
@@ -201,8 +217,7 @@
 		A4FF441821C4D74F00936983 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A4FF43FD21C4D4C500936983 /* LaunchScreen.storyboard */,
-				A4FF43F821C4D4C400936983 /* Main.storyboard */,
+				A4C15EAF21C64994003D539B /* Storyboards */,
 				A4C15EAE21C64783003D539B /* TableViewCell */,
 			);
 			path = Views;
@@ -211,7 +226,8 @@
 		A4FF441B21C5FED100936983 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				A4FF441C21C5FF0B00936983 /* Observable.swift */,
+				A4C15EB021C649C3003D539B /* Observer */,
+				A4FF442A21C6098800936983 /* Protocols */,
 			);
 			path = Utils;
 			sourceTree = "<group>";

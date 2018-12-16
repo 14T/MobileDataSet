@@ -22,23 +22,10 @@ class MobileDataListViewModel {
     
 }
 
-// MARK: - UIValues
-extension MobileDataListViewModel {
-    public var title: String? {
-        return "name"
-    }
-    
-    public var subtitle: String? {
-        return "ratingDescription"
-    }
-    
-}
-
-
 extension MobileDataListViewModel {
     func start() {
         self.isLoading.value = true
-        dataService.fetchDateFromServer { [weak self] (records) in
+        dataService.fetchDataFromServer { [weak self] (records) in
             self?.isLoading.value = false
             self?.tableItems.value.removeAll()
             
