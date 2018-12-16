@@ -8,6 +8,7 @@ target 'DataSetApp' do
   # Pods for DataSetApp
 	pod 'Alamofire'
 	pod 'RealmSwift'
+        pod 'SwiftyJSON', '~> 4.0'
   target 'DataSetAppTests' do
     inherit! :search_paths
     # Pods for testing

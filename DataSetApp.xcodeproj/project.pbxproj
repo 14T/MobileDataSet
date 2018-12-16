@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		06D0A1B7691156C9FB52999C /* Pods_DataSetAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EA5EA5875246E32C9ABF3B /* Pods_DataSetAppTests.framework */; };
+		A4C15EA921C618FE003D539B /* SPHResponseModelFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EA421C618FD003D539B /* SPHResponseModelFields.swift */; };
+		A4C15EAA21C618FE003D539B /* SPHResponseModelRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EA521C618FD003D539B /* SPHResponseModelRecords.swift */; };
+		A4C15EAB21C618FE003D539B /* SPHResponseModelResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EA621C618FE003D539B /* SPHResponseModelResult.swift */; };
+		A4C15EAC21C618FE003D539B /* SPHResponseModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EA721C618FE003D539B /* SPHResponseModelBase.swift */; };
+		A4C15EAD21C618FE003D539B /* SPHResponseModelLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EA821C618FE003D539B /* SPHResponseModelLinks.swift */; };
 		A4FF43F521C4D4C400936983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF43F421C4D4C400936983 /* AppDelegate.swift */; };
 		A4FF43F721C4D4C400936983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF43F621C4D4C400936983 /* ViewController.swift */; };
 		A4FF43FA21C4D4C400936983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FF43F821C4D4C400936983 /* Main.storyboard */; };
 		A4FF43FC21C4D4C500936983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FF43FB21C4D4C500936983 /* Assets.xcassets */; };
 		A4FF43FF21C4D4C500936983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FF43FD21C4D4C500936983 /* LaunchScreen.storyboard */; };
 		A4FF440A21C4D4C500936983 /* DataSetAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF440921C4D4C500936983 /* DataSetAppTests.swift */; };
+		A4FF441A21C5FE7C00936983 /* MobileDataListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF441921C5FE7C00936983 /* MobileDataListViewModel.swift */; };
+		A4FF441D21C5FF0B00936983 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF441C21C5FF0B00936983 /* Observable.swift */; };
+		A4FF442021C5FFFC00936983 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF441F21C5FFFC00936983 /* DataServices.swift */; };
+		A4FF442C21C6099A00936983 /* CellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF442B21C6099A00936983 /* CellRepresentable.swift */; };
+		A4FF442E21C611CC00936983 /* MobileDataCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF442D21C611CC00936983 /* MobileDataCellViewModel.swift */; };
+		A4FF443421C6128800936983 /* MobileDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF443221C6128800936983 /* MobileDataTableViewCell.swift */; };
+		A4FF443521C6128800936983 /* MobileDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FF443321C6128800936983 /* MobileDataTableViewCell.xib */; };
 		FE2E193D082DF6B144A8C361 /* Pods_DataSetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9CB841C49CB148C5275186E /* Pods_DataSetApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +45,11 @@
 		6ADF1DC229DE8726B8974847 /* Pods-DataSetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataSetApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataSetApp/Pods-DataSetApp.debug.xcconfig"; sourceTree = "<group>"; };
 		952EB10F23570C8551B65189 /* Pods-DataSetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataSetApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataSetApp/Pods-DataSetApp.release.xcconfig"; sourceTree = "<group>"; };
 		A0A3151A6544AAFBF7462DE7 /* Pods-DataSetAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataSetAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataSetAppTests/Pods-DataSetAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4C15EA421C618FD003D539B /* SPHResponseModelFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHResponseModelFields.swift; sourceTree = "<group>"; };
+		A4C15EA521C618FD003D539B /* SPHResponseModelRecords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHResponseModelRecords.swift; sourceTree = "<group>"; };
+		A4C15EA621C618FE003D539B /* SPHResponseModelResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHResponseModelResult.swift; sourceTree = "<group>"; };
+		A4C15EA721C618FE003D539B /* SPHResponseModelBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHResponseModelBase.swift; sourceTree = "<group>"; };
+		A4C15EA821C618FE003D539B /* SPHResponseModelLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHResponseModelLinks.swift; sourceTree = "<group>"; };
 		A4FF43F121C4D4C400936983 /* DataSetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataSetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FF43F421C4D4C400936983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4FF43F621C4D4C400936983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +60,13 @@
 		A4FF440521C4D4C500936983 /* DataSetAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataSetAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FF440921C4D4C500936983 /* DataSetAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSetAppTests.swift; sourceTree = "<group>"; };
 		A4FF440B21C4D4C500936983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4FF441921C5FE7C00936983 /* MobileDataListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataListViewModel.swift; sourceTree = "<group>"; };
+		A4FF441C21C5FF0B00936983 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		A4FF441F21C5FFFC00936983 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		A4FF442B21C6099A00936983 /* CellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRepresentable.swift; sourceTree = "<group>"; };
+		A4FF442D21C611CC00936983 /* MobileDataCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataCellViewModel.swift; sourceTree = "<group>"; };
+		A4FF443221C6128800936983 /* MobileDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataTableViewCell.swift; sourceTree = "<group>"; };
+		A4FF443321C6128800936983 /* MobileDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MobileDataTableViewCell.xib; sourceTree = "<group>"; };
 		D9CB841C49CB148C5275186E /* Pods_DataSetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataSetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,6 +110,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A4C15EAE21C64783003D539B /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4FF443221C6128800936983 /* MobileDataTableViewCell.swift */,
+				A4FF443321C6128800936983 /* MobileDataTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		A4FF43E821C4D4C400936983 = {
 			isa = PBXGroup;
 			children = (
@@ -109,11 +142,15 @@
 		A4FF43F321C4D4C400936983 /* DataSetApp */ = {
 			isa = PBXGroup;
 			children = (
-				A4FF441521C4D70E00936983 /* Controllers */,
-				A4FF441821C4D74F00936983 /* Views */,
-				A4FF441721C4D74600936983 /* ViewModels */,
-				A4FF441621C4D72A00936983 /* Resources */,
 				A4FF441421C4D6FA00936983 /* AppDelegate */,
+				A4FF441521C4D70E00936983 /* Controllers */,
+				A4FF442121C6033300936983 /* Models */,
+				A4FF442A21C6098800936983 /* Protocols */,
+				A4FF441621C4D72A00936983 /* Resources */,
+				A4FF441E21C5FFE000936983 /* Services */,
+				A4FF441B21C5FED100936983 /* Utils */,
+				A4FF441721C4D74600936983 /* ViewModels */,
+				A4FF441821C4D74F00936983 /* Views */,
 			);
 			path = DataSetApp;
 			sourceTree = "<group>";
@@ -155,6 +192,8 @@
 		A4FF441721C4D74600936983 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A4FF442F21C611D300936983 /* CellViewModel */,
+				A4FF441921C5FE7C00936983 /* MobileDataListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -164,8 +203,53 @@
 			children = (
 				A4FF43FD21C4D4C500936983 /* LaunchScreen.storyboard */,
 				A4FF43F821C4D4C400936983 /* Main.storyboard */,
+				A4C15EAE21C64783003D539B /* TableViewCell */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A4FF441B21C5FED100936983 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A4FF441C21C5FF0B00936983 /* Observable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A4FF441E21C5FFE000936983 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A4FF441F21C5FFFC00936983 /* DataServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A4FF442121C6033300936983 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A4C15EA721C618FE003D539B /* SPHResponseModelBase.swift */,
+				A4C15EA421C618FD003D539B /* SPHResponseModelFields.swift */,
+				A4C15EA821C618FE003D539B /* SPHResponseModelLinks.swift */,
+				A4C15EA521C618FD003D539B /* SPHResponseModelRecords.swift */,
+				A4C15EA621C618FE003D539B /* SPHResponseModelResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A4FF442A21C6098800936983 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A4FF442B21C6099A00936983 /* CellRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A4FF442F21C611D300936983 /* CellViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A4FF442D21C611CC00936983 /* MobileDataCellViewModel.swift */,
+			);
+			path = CellViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4FF43FF21C4D4C500936983 /* LaunchScreen.storyboard in Resources */,
+				A4FF443521C6128800936983 /* MobileDataTableViewCell.xib in Resources */,
 				A4FF43FC21C4D4C500936983 /* Assets.xcassets in Resources */,
 				A4FF43FA21C4D4C400936983 /* Main.storyboard in Resources */,
 			);
@@ -296,12 +381,14 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -333,8 +420,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4FF442021C5FFFC00936983 /* DataServices.swift in Sources */,
+				A4FF443421C6128800936983 /* MobileDataTableViewCell.swift in Sources */,
+				A4FF441D21C5FF0B00936983 /* Observable.swift in Sources */,
+				A4C15EAB21C618FE003D539B /* SPHResponseModelResult.swift in Sources */,
+				A4C15EAD21C618FE003D539B /* SPHResponseModelLinks.swift in Sources */,
+				A4FF442C21C6099A00936983 /* CellRepresentable.swift in Sources */,
 				A4FF43F721C4D4C400936983 /* ViewController.swift in Sources */,
+				A4C15EAA21C618FE003D539B /* SPHResponseModelRecords.swift in Sources */,
 				A4FF43F521C4D4C400936983 /* AppDelegate.swift in Sources */,
+				A4FF441A21C5FE7C00936983 /* MobileDataListViewModel.swift in Sources */,
+				A4FF442E21C611CC00936983 /* MobileDataCellViewModel.swift in Sources */,
+				A4C15EA921C618FE003D539B /* SPHResponseModelFields.swift in Sources */,
+				A4C15EAC21C618FE003D539B /* SPHResponseModelBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
