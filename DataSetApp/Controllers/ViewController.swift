@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        MobileDataCellViewModel.registerCell(tableView: tableView)
+        viewModel.tableItemTypes.forEach { $0.registerCell(tableView: tableView) }
 
         initBinding()
         viewModel.start()
@@ -29,20 +29,15 @@ class ViewController: UIViewController {
         viewModel.tableItems.addObserver(fireNow: false) { [weak self] (sectionViewModels) in
             self?.tableView.reloadData()
         }
-        
-//        viewModel.title.addObserver { [weak self] (title) in
-//            self?.titleLabel.text = title
-//        }
-        
-//        viewModel.isTableViewHidden.addObserver { [weak self] (isHidden) in
-//            self?.tableView.isHidden = isHidden
-//        }
-        
+        viewModel.title.addObserver { [weak self] (title) in
+            self?.title = title
+        }
+
         viewModel.isLoading.addObserver { [weak self] (isLoading) in
             if isLoading {
-//                self?.loadingIdicator.startAnimating()
+                // Show loader
             } else {
-//                self?.loadingIdicator.stopAnimating()
+                // hide loader
             }
         }
     }
@@ -50,9 +45,6 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return viewModel.tableItems.value.count
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.tableItems.value.count

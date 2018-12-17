@@ -13,6 +13,10 @@
 		A4C15EAB21C618FE003D539B /* SPHResponseModelResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EA621C618FE003D539B /* SPHResponseModelResult.swift */; };
 		A4C15EAC21C618FE003D539B /* SPHResponseModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EA721C618FE003D539B /* SPHResponseModelBase.swift */; };
 		A4C15EAD21C618FE003D539B /* SPHResponseModelLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EA821C618FE003D539B /* SPHResponseModelLinks.swift */; };
+		A4C15EB221C727CE003D539B /* MobileDataYearlyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EB121C727CE003D539B /* MobileDataYearlyModel.swift */; };
+		A4C15EB421C7322F003D539B /* MobileDataYearlyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EB321C7322F003D539B /* MobileDataYearlyCellViewModel.swift */; };
+		A4C15EB921C73322003D539B /* SPHYearlyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EB721C73322003D539B /* SPHYearlyTableViewCell.swift */; };
+		A4C15EBA21C73322003D539B /* SPHYearlyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4C15EB821C73322003D539B /* SPHYearlyTableViewCell.xib */; };
 		A4FF43F521C4D4C400936983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF43F421C4D4C400936983 /* AppDelegate.swift */; };
 		A4FF43F721C4D4C400936983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF43F621C4D4C400936983 /* ViewController.swift */; };
 		A4FF43FA21C4D4C400936983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FF43F821C4D4C400936983 /* Main.storyboard */; };
@@ -50,6 +54,10 @@
 		A4C15EA621C618FE003D539B /* SPHResponseModelResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHResponseModelResult.swift; sourceTree = "<group>"; };
 		A4C15EA721C618FE003D539B /* SPHResponseModelBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHResponseModelBase.swift; sourceTree = "<group>"; };
 		A4C15EA821C618FE003D539B /* SPHResponseModelLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHResponseModelLinks.swift; sourceTree = "<group>"; };
+		A4C15EB121C727CE003D539B /* MobileDataYearlyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataYearlyModel.swift; sourceTree = "<group>"; };
+		A4C15EB321C7322F003D539B /* MobileDataYearlyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataYearlyCellViewModel.swift; sourceTree = "<group>"; };
+		A4C15EB721C73322003D539B /* SPHYearlyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHYearlyTableViewCell.swift; sourceTree = "<group>"; };
+		A4C15EB821C73322003D539B /* SPHYearlyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPHYearlyTableViewCell.xib; sourceTree = "<group>"; };
 		A4FF43F121C4D4C400936983 /* DataSetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataSetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FF43F421C4D4C400936983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4FF43F621C4D4C400936983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,8 +121,8 @@
 		A4C15EAE21C64783003D539B /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				A4FF443221C6128800936983 /* MobileDataTableViewCell.swift */,
-				A4FF443321C6128800936983 /* MobileDataTableViewCell.xib */,
+				A4C15EB621C732E0003D539B /* YearlyCell */,
+				A4C15EB521C732D2003D539B /* QuarterlyCell */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -134,6 +142,24 @@
 				A4FF441C21C5FF0B00936983 /* Observable.swift */,
 			);
 			path = Observer;
+			sourceTree = "<group>";
+		};
+		A4C15EB521C732D2003D539B /* QuarterlyCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4FF443221C6128800936983 /* MobileDataTableViewCell.swift */,
+				A4FF443321C6128800936983 /* MobileDataTableViewCell.xib */,
+			);
+			path = QuarterlyCell;
+			sourceTree = "<group>";
+		};
+		A4C15EB621C732E0003D539B /* YearlyCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4C15EB721C73322003D539B /* SPHYearlyTableViewCell.swift */,
+				A4C15EB821C73322003D539B /* SPHYearlyTableViewCell.xib */,
+			);
+			path = YearlyCell;
 			sourceTree = "<group>";
 		};
 		A4FF43E821C4D4C400936983 = {
@@ -243,6 +269,7 @@
 		A4FF442121C6033300936983 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A4C15EB121C727CE003D539B /* MobileDataYearlyModel.swift */,
 				A4C15EA721C618FE003D539B /* SPHResponseModelBase.swift */,
 				A4C15EA421C618FD003D539B /* SPHResponseModelFields.swift */,
 				A4C15EA821C618FE003D539B /* SPHResponseModelLinks.swift */,
@@ -264,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				A4FF442D21C611CC00936983 /* MobileDataCellViewModel.swift */,
+				A4C15EB321C7322F003D539B /* MobileDataYearlyCellViewModel.swift */,
 			);
 			path = CellViewModel;
 			sourceTree = "<group>";
@@ -352,6 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C15EBA21C73322003D539B /* SPHYearlyTableViewCell.xib in Resources */,
 				A4FF43FF21C4D4C500936983 /* LaunchScreen.storyboard in Resources */,
 				A4FF443521C6128800936983 /* MobileDataTableViewCell.xib in Resources */,
 				A4FF43FC21C4D4C500936983 /* Assets.xcassets in Resources */,
@@ -440,11 +469,14 @@
 				A4FF443421C6128800936983 /* MobileDataTableViewCell.swift in Sources */,
 				A4FF441D21C5FF0B00936983 /* Observable.swift in Sources */,
 				A4C15EAB21C618FE003D539B /* SPHResponseModelResult.swift in Sources */,
+				A4C15EB421C7322F003D539B /* MobileDataYearlyCellViewModel.swift in Sources */,
 				A4C15EAD21C618FE003D539B /* SPHResponseModelLinks.swift in Sources */,
 				A4FF442C21C6099A00936983 /* CellRepresentable.swift in Sources */,
+				A4C15EB221C727CE003D539B /* MobileDataYearlyModel.swift in Sources */,
 				A4FF43F721C4D4C400936983 /* ViewController.swift in Sources */,
 				A4C15EAA21C618FE003D539B /* SPHResponseModelRecords.swift in Sources */,
 				A4FF43F521C4D4C400936983 /* AppDelegate.swift in Sources */,
+				A4C15EB921C73322003D539B /* SPHYearlyTableViewCell.swift in Sources */,
 				A4FF441A21C5FE7C00936983 /* MobileDataListViewModel.swift in Sources */,
 				A4FF442E21C611CC00936983 /* MobileDataCellViewModel.swift in Sources */,
 				A4C15EA921C618FE003D539B /* SPHResponseModelFields.swift in Sources */,

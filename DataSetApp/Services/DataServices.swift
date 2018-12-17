@@ -14,7 +14,7 @@ import SwiftyJSON
 class DataServices {
     let urlString = "https://data.gov.sg/api/action/datastore_search"
     let parameters: Parameters = ["resource_id": "a807b7ab-6cad-4aa6-87d0-e283a7353a0f",
-                                  "limit": 20]
+                                  "limit": 200]
     /// Fetch feeds from server
     func fetchDataFromServer(complete: @escaping (SPHResponseModelBase) -> Void) {
         Alamofire.request(urlString,  method: .get, parameters: parameters).responseJSON { response in

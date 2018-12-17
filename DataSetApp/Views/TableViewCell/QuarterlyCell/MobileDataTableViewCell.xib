@@ -12,32 +12,34 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MobileDataTableViewCell" id="KGk-i7-Jjw" customClass="MobileDataTableViewCell" customModule="DataSetApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MobileDataTableViewCell" rowHeight="89" id="KGk-i7-Jjw" customClass="MobileDataTableViewCell" customModule="DataSetApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="88.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmm-SC-roX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15x-jc-Abq">
+                        <rect key="frame" x="0.0" y="-1" width="320" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmm-SC-roX">
+                        <rect key="frame" x="0.0" y="39" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="Bmm-SC-roX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HNo-TC-IQH"/>
-                    <constraint firstAttribute="bottom" secondItem="Bmm-SC-roX" secondAttribute="bottom" constant="-0.5" id="J04-Nz-R7w"/>
-                    <constraint firstAttribute="trailing" secondItem="Bmm-SC-roX" secondAttribute="trailing" id="LZ8-Kq-EXN"/>
-                    <constraint firstItem="Bmm-SC-roX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="t9D-5F-yoq"/>
-                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="volumeLabel" destination="Bmm-SC-roX" id="Kso-Zl-6vA"/>
             </connections>
-            <point key="canvasLocation" x="56" y="48.575712143928037"/>
+            <point key="canvasLocation" x="56" y="67.916041979010501"/>
         </tableViewCell>
     </objects>
 </document>

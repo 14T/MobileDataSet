@@ -12,7 +12,7 @@ import UIKit
 class MobileDataCellViewModel {
 
     //MARK: - Properties
-    public var reesponseModelRecords: SPHResponseModelRecords?
+    private var reesponseModelRecords: SPHResponseModelRecords?
    
     //MARK: - Init
     init(value: SPHResponseModelRecords) {
