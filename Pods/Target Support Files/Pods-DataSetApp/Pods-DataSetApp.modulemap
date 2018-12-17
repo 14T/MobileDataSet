@@ -1,0 +1,6 @@
+framework module Pods_DataSetApp {
+  umbrella header "Pods-DataSetApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
