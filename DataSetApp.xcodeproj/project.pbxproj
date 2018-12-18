@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,7 @@
 		A4C15EAB21C618FE003D539B /* SPHResponseModelResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EA621C618FE003D539B /* SPHResponseModelResult.swift */; };
 		A4C15EAC21C618FE003D539B /* SPHResponseModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EA721C618FE003D539B /* SPHResponseModelBase.swift */; };
 		A4C15EAD21C618FE003D539B /* SPHResponseModelLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EA821C618FE003D539B /* SPHResponseModelLinks.swift */; };
-		A4C15EB221C727CE003D539B /* MobileDataYearlyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EB121C727CE003D539B /* MobileDataYearlyModel.swift */; };
+		A4C15EB221C727CE003D539B /* SPHMobileDataYearlyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EB121C727CE003D539B /* SPHMobileDataYearlyModel.swift */; };
 		A4C15EB421C7322F003D539B /* MobileDataYearlyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EB321C7322F003D539B /* MobileDataYearlyCellViewModel.swift */; };
 		A4C15EB921C73322003D539B /* SPHYearlyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C15EB721C73322003D539B /* SPHYearlyTableViewCell.swift */; };
 		A4C15EBA21C73322003D539B /* SPHYearlyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4C15EB821C73322003D539B /* SPHYearlyTableViewCell.xib */; };
@@ -22,7 +22,6 @@
 		A4FF43FA21C4D4C400936983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FF43F821C4D4C400936983 /* Main.storyboard */; };
 		A4FF43FC21C4D4C500936983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FF43FB21C4D4C500936983 /* Assets.xcassets */; };
 		A4FF43FF21C4D4C500936983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FF43FD21C4D4C500936983 /* LaunchScreen.storyboard */; };
-		A4FF440A21C4D4C500936983 /* DataSetAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF440921C4D4C500936983 /* DataSetAppTests.swift */; };
 		A4FF441A21C5FE7C00936983 /* MobileDataListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF441921C5FE7C00936983 /* MobileDataListViewModel.swift */; };
 		A4FF441D21C5FF0B00936983 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF441C21C5FF0B00936983 /* Observable.swift */; };
 		A4FF442021C5FFFC00936983 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF441F21C5FFFC00936983 /* DataServices.swift */; };
@@ -30,6 +29,8 @@
 		A4FF442E21C611CC00936983 /* MobileDataCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF442D21C611CC00936983 /* MobileDataCellViewModel.swift */; };
 		A4FF443421C6128800936983 /* MobileDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF443221C6128800936983 /* MobileDataTableViewCell.swift */; };
 		A4FF443521C6128800936983 /* MobileDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FF443321C6128800936983 /* MobileDataTableViewCell.xib */; };
+		CBAFC4F021C78D700016A5A8 /* APIServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAFC4EF21C78D700016A5A8 /* APIServiceTest.swift */; };
+		CBAFC4F521C89B080016A5A8 /* ActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAFC4F421C89B080016A5A8 /* ActionProtocol.swift */; };
 		FE2E193D082DF6B144A8C361 /* Pods_DataSetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9CB841C49CB148C5275186E /* Pods_DataSetApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +55,7 @@
 		A4C15EA621C618FE003D539B /* SPHResponseModelResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHResponseModelResult.swift; sourceTree = "<group>"; };
 		A4C15EA721C618FE003D539B /* SPHResponseModelBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHResponseModelBase.swift; sourceTree = "<group>"; };
 		A4C15EA821C618FE003D539B /* SPHResponseModelLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPHResponseModelLinks.swift; sourceTree = "<group>"; };
-		A4C15EB121C727CE003D539B /* MobileDataYearlyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataYearlyModel.swift; sourceTree = "<group>"; };
+		A4C15EB121C727CE003D539B /* SPHMobileDataYearlyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHMobileDataYearlyModel.swift; sourceTree = "<group>"; };
 		A4C15EB321C7322F003D539B /* MobileDataYearlyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataYearlyCellViewModel.swift; sourceTree = "<group>"; };
 		A4C15EB721C73322003D539B /* SPHYearlyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHYearlyTableViewCell.swift; sourceTree = "<group>"; };
 		A4C15EB821C73322003D539B /* SPHYearlyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPHYearlyTableViewCell.xib; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		A4FF43FE21C4D4C500936983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4FF440021C4D4C500936983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4FF440521C4D4C500936983 /* DataSetAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataSetAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4FF440921C4D4C500936983 /* DataSetAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSetAppTests.swift; sourceTree = "<group>"; };
 		A4FF440B21C4D4C500936983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4FF441921C5FE7C00936983 /* MobileDataListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataListViewModel.swift; sourceTree = "<group>"; };
 		A4FF441C21C5FF0B00936983 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
@@ -75,6 +75,8 @@
 		A4FF442D21C611CC00936983 /* MobileDataCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataCellViewModel.swift; sourceTree = "<group>"; };
 		A4FF443221C6128800936983 /* MobileDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataTableViewCell.swift; sourceTree = "<group>"; };
 		A4FF443321C6128800936983 /* MobileDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MobileDataTableViewCell.xib; sourceTree = "<group>"; };
+		CBAFC4EF21C78D700016A5A8 /* APIServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTest.swift; sourceTree = "<group>"; };
+		CBAFC4F421C89B080016A5A8 /* ActionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionProtocol.swift; sourceTree = "<group>"; };
 		D9CB841C49CB148C5275186E /* Pods_DataSetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataSetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -190,7 +192,7 @@
 				A4FF442121C6033300936983 /* Models */,
 				A4FF441621C4D72A00936983 /* Resources */,
 				A4FF441E21C5FFE000936983 /* Services */,
-				A4FF441B21C5FED100936983 /* Utils */,
+				A4FF441B21C5FED100936983 /* Helpers */,
 				A4FF441721C4D74600936983 /* ViewModels */,
 				A4FF441821C4D74F00936983 /* Views */,
 			);
@@ -200,8 +202,8 @@
 		A4FF440821C4D4C500936983 /* DataSetAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				A4FF440921C4D4C500936983 /* DataSetAppTests.swift */,
 				A4FF440B21C4D4C500936983 /* Info.plist */,
+				CBAFC4EF21C78D700016A5A8 /* APIServiceTest.swift */,
 			);
 			path = DataSetAppTests;
 			sourceTree = "<group>";
@@ -249,13 +251,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A4FF441B21C5FED100936983 /* Utils */ = {
+		A4FF441B21C5FED100936983 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CBAFC4F321C89AF20016A5A8 /* ActionProtocol */,
 				A4C15EB021C649C3003D539B /* Observer */,
 				A4FF442A21C6098800936983 /* Protocols */,
 			);
-			path = Utils;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		A4FF441E21C5FFE000936983 /* Services */ = {
@@ -269,7 +272,7 @@
 		A4FF442121C6033300936983 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A4C15EB121C727CE003D539B /* MobileDataYearlyModel.swift */,
+				A4C15EB121C727CE003D539B /* SPHMobileDataYearlyModel.swift */,
 				A4C15EA721C618FE003D539B /* SPHResponseModelBase.swift */,
 				A4C15EA421C618FD003D539B /* SPHResponseModelFields.swift */,
 				A4C15EA821C618FE003D539B /* SPHResponseModelLinks.swift */,
@@ -294,6 +297,14 @@
 				A4C15EB321C7322F003D539B /* MobileDataYearlyCellViewModel.swift */,
 			);
 			path = CellViewModel;
+			sourceTree = "<group>";
+		};
+		CBAFC4F321C89AF20016A5A8 /* ActionProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				CBAFC4F421C89B080016A5A8 /* ActionProtocol.swift */,
+			);
+			path = ActionProtocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,21 +354,24 @@
 		A4FF43E921C4D4C400936983 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SPH;
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = SPHTech;
 				TargetAttributes = {
 					A4FF43F021C4D4C400936983 = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 					};
 					A4FF440421C4D4C500936983 = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = A4FF43F021C4D4C400936983;
 					};
 				};
 			};
 			buildConfigurationList = A4FF43EC21C4D4C400936983 /* Build configuration list for PBXProject "DataSetApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -467,12 +481,13 @@
 			files = (
 				A4FF442021C5FFFC00936983 /* DataServices.swift in Sources */,
 				A4FF443421C6128800936983 /* MobileDataTableViewCell.swift in Sources */,
+				CBAFC4F521C89B080016A5A8 /* ActionProtocol.swift in Sources */,
 				A4FF441D21C5FF0B00936983 /* Observable.swift in Sources */,
 				A4C15EAB21C618FE003D539B /* SPHResponseModelResult.swift in Sources */,
 				A4C15EB421C7322F003D539B /* MobileDataYearlyCellViewModel.swift in Sources */,
 				A4C15EAD21C618FE003D539B /* SPHResponseModelLinks.swift in Sources */,
 				A4FF442C21C6099A00936983 /* CellRepresentable.swift in Sources */,
-				A4C15EB221C727CE003D539B /* MobileDataYearlyModel.swift in Sources */,
+				A4C15EB221C727CE003D539B /* SPHMobileDataYearlyModel.swift in Sources */,
 				A4FF43F721C4D4C400936983 /* ViewController.swift in Sources */,
 				A4C15EAA21C618FE003D539B /* SPHResponseModelRecords.swift in Sources */,
 				A4FF43F521C4D4C400936983 /* AppDelegate.swift in Sources */,
@@ -488,7 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4FF440A21C4D4C500936983 /* DataSetAppTests.swift in Sources */,
+				CBAFC4F021C78D700016A5A8 /* APIServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,10 +661,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4GDUVD762;
 				INFOPLIST_FILE = DataSetApp/Resources/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sphtech.DataSetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -665,10 +678,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4GDUVD762;
 				INFOPLIST_FILE = DataSetApp/Resources/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sphtech.DataSetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -685,11 +696,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4GDUVD762;
 				INFOPLIST_FILE = DataSetAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sphtech.DataSetAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -707,11 +715,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4GDUVD762;
 				INFOPLIST_FILE = DataSetAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sphtech.DataSetAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

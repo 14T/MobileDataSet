@@ -15,15 +15,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
-        viewModel.tableItemTypes.forEach { $0.registerCell(tableView: tableView) }
-
+        
+        initView()
         initBinding()
         viewModel.start()
     }
 
-
+    func initView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        viewModel.tableItemTypes.forEach { $0.registerCell(tableView: tableView) }
+        tableView.estimatedRowHeight = 150
+        tableView.rowHeight = UITableViewAutomaticDimension
+    }
     
     func initBinding() {
         viewModel.tableItems.addObserver(fireNow: false) { [weak self] (sectionViewModels) in
@@ -52,8 +56,27 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableItem = viewModel.tableItems.value[indexPath.row]
-        let cell = tableItem.cellInstance(tableView: tableView, indexPath: indexPath)
+//        tableItem.setDelegate(delegate: self)
+        let cell = tableItem.cellInstance(tableView: tableView, indexPath: indexPath, delegate: self)
         return cell
     }
 
+}
+
+
+extension ViewController: ActionDelegate {
+    // Some VC properties and methods...
+    func onAction(_ sender: Any?, _ action: ActionType) {
+        switch action {
+        case SPHYearlyTableViewCell.Action.indicatorButtonClicked(let year):
+            debugPrint("Cell Button Clicked")
+            
+            let alert = UIAlertController(title: "Info", message: "This represents a decrease in Quarterly Mobile Data usages in year :\(year ?? "")", preferredStyle: UIAlertControllerStyle.alert)
+            let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+        default:
+            debugPrint(action)
+        }
+    }
 }
