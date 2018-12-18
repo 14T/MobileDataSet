@@ -11,16 +11,13 @@ import UIKit
 
 class MobileDataYearlyCellViewModel {
     
-    //MARK: - Properties
-    private var reesponseModelRecords: MobileDataYearlyModel?
+     //MARK: - Properties
+    private var reesponseModelRecords: SPHMobileDataYearlyModel?
     
     //MARK: - Init
-    init(value: MobileDataYearlyModel) {
+    init(value: SPHMobileDataYearlyModel) {
         self.reesponseModelRecords = value
     }
-    
-    //MARK: - Events
-    //    var didSelectString: ((String) -> Void)?
 }
 
 //MARK: - UI Representable Data
@@ -31,14 +28,19 @@ extension MobileDataYearlyCellViewModel {
     public var volume: String? {
         return String(reesponseModelRecords?.volumeOfData ?? 0.0)
     }
+    
+    public var isDecreaseInVolumeData: Bool {
+        return reesponseModelRecords?.isDecreaseInVolumeData ?? false
+    }
 }
 
 
 //MARK: - CellRepresentable
 extension MobileDataYearlyCellViewModel: CellRepresentable {
-    func cellInstance(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+
+    func cellInstance(tableView: UITableView, indexPath: IndexPath, delegate : ActionDelegate? = nil) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SPHYearlyTableViewCell.self), for: indexPath) as! SPHYearlyTableViewCell
-        cell.setup(viewModel: self)
+        cell.setup(viewModel: self, delegate: delegate)
         return cell
     }
     
@@ -47,6 +49,5 @@ extension MobileDataYearlyCellViewModel: CellRepresentable {
     }
     
     func cellSelected() {
-        //        self.didSelectString?("\(self.rawValue)")
     }
 }

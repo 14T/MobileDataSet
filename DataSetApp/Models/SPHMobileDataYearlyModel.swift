@@ -9,10 +9,10 @@
 import Foundation
 
 
-class MobileDataYearlyModel {
+class SPHMobileDataYearlyModel {
     // MARK: - Properties
     var year : String?
     var volumeOfData : Double = 0.0 //petabytes
     var quarterlyItems = [SPHResponseModelRecords]() //petabytes
-
+    var isDecreaseInVolumeData = false
 }

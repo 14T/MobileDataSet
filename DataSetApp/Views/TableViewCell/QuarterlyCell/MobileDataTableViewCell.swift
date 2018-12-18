@@ -13,7 +13,7 @@ class MobileDataTableViewCell: UITableViewCell {
     @IBOutlet weak var volumeLabel: UILabel!
 
     //MARK: - Public
-    func setup(viewModel: MobileDataCellViewModel) {
+    func setup(viewModel: MobileDataCellViewModel, delegate : ActionDelegate?) {
         self.volumeLabel.text = viewModel.volume
     }
     

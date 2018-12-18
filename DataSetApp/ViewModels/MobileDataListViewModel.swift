@@ -20,7 +20,7 @@ class MobileDataListViewModel {
     var tableItems = Observable<[CellRepresentable]>(value: [])
     
     // MARK: - Private Properties
-    private var yearlyItems = [MobileDataYearlyModel]()
+    private var yearlyItems = [SPHMobileDataYearlyModel]()
     
     // MARK: - TableView Properties
     let tableItemTypes: [CellRepresentable.Type] = [MobileDataCellViewModel.self, MobileDataYearlyCellViewModel.self]
@@ -32,18 +32,18 @@ extension MobileDataListViewModel {
     func start() {
         self.isLoading.value = true
         self.title.value = "Loading..."
+        
         dataService.fetchDataFromServer { [weak self] (records) in
             self?.isLoading.value = false
+            self?.title.value = "Mobile Data Usage"
+            
             self?.tableItems.value.removeAll()
             if let records = records.result?.records{
                 for item in records {
                     self?.addYearItemIfNotPresent(value: item)
                 }
             }
-            
             self?.showYearlyItems()
-            self?.title.value = "Mobile Data Usage"
-
         }
     }
     
@@ -55,11 +55,11 @@ extension MobileDataListViewModel {
                     if item.year == yearStringValue {
                         item.quarterlyItems.append(value)
                         item.volumeOfData = self.totalDataUsedInAnYear(yearlyItem: item)
-//                        debugPrint("YEAR: \(item.year) , TOTAL: \(item.volumeOfData) COUNT: \(item.quarterlyItems.count)")
+                        item.isDecreaseInVolumeData = self.isDecreaseInQuarterlyUasges(yearlyItem: item)
                         return
                     }
                 }
-                    let yearlyItem = MobileDataYearlyModel()
+                    let yearlyItem = SPHMobileDataYearlyModel()
                     yearlyItem.year = yearStringValue
                     yearlyItem.quarterlyItems.append(value)
                     yearlyItems.append(yearlyItem)
@@ -67,12 +67,32 @@ extension MobileDataListViewModel {
             }
         }
     }
-    func totalDataUsedInAnYear(yearlyItem : MobileDataYearlyModel) -> Double {
+    func totalDataUsedInAnYear(yearlyItem : SPHMobileDataYearlyModel) -> Double {
         var dataUsed : Double = 0.0
+        var lastDataUsed : Double = 0.0
         for item in yearlyItem.quarterlyItems {
-            dataUsed += Double(item.volumeOfMobileData ?? "0.0") ?? 0.0
+            let thisDataUsed = Double(item.volumeOfMobileData ?? "0.0") ?? 0.0
+            if lastDataUsed != 0 && lastDataUsed < thisDataUsed {
+                yearlyItem.isDecreaseInVolumeData = true
+            }
+            dataUsed += thisDataUsed
+            lastDataUsed = thisDataUsed
+            //                        debugPrint("YEAR: \(item.year) , TOTAL: \(item.volumeOfData) COUNT: \(item.quarterlyItems.count)")
+
         }
         return dataUsed
+    }
+    
+    func isDecreaseInQuarterlyUasges(yearlyItem : SPHMobileDataYearlyModel) -> Bool {
+        var lastDataUsed : Double = 0.0
+        for item in yearlyItem.quarterlyItems {
+            let thisDataUsed = Double(item.volumeOfMobileData ?? "0.0") ?? 0.0
+            if lastDataUsed != 0 && lastDataUsed > thisDataUsed {
+                return true
+            }
+            lastDataUsed = thisDataUsed
+        }
+        return false
     }
     
     func showYearlyItems(){
